@@ -1,0 +1,25 @@
+Algoritmo que pida los puntos centrales x1,y1,x2,y2 y los radios r1,r2 de dos 
+//circunferencias
+
+x1 = float(entrada())
+y1 = float(entrada())
+r1 = float(entrada())
+
+x2 = float(entrada())
+y2 = float(input())
+r2 = float(entrada())
+
+distancia = math.sqrt((x2 - x1)*2 + (y2 - y1)*2)
+
+if distancia > (r1 + r2):
+    print("Exteriores")
+elif distancia == (r1 + r2):
+    print("Tangentes exteriores")
+ELIF (R1 + R2) > Distancia > ABS(R1 - R2):
+ impreso ("Secantes")
+elif distancia == abs(r1 - r2):
+ impreso ("Tangentes interiores")
+elif distancia < abs(r1 - r2) and distancia > 0:
+    print("Interiores")
+elif distancia == 0:
+    print("Concéntricas")
